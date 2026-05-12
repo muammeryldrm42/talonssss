@@ -8,9 +8,7 @@
   "author": "Talons Protocol",
   "homepage": "https://github.com/muammeryldrm42/open-talons",
   "repository": { "type": "git", "url": "https://github.com/muammeryldrm42/open-talons.git" },
-  "workspaces": ["packages/*", "packages/plugins/*", "apps/*", "examples/*"],
   "scripts": {
-    "build": "pnpm -r --filter=./packages/** --filter=./apps/** build",
     "dev": "pnpm --filter=@open-talons/cli dev",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
