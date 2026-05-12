@@ -1,0 +1,14 @@
+{
+  "name": "example-programmatic-usage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "tsx src/index.ts" },
+  "dependencies": {
+    "@open-talons/core": "workspace:*",
+    "@open-talons/plugin-bagsfm": "workspace:*",
+    "@open-talons/plugin-solana": "workspace:*",
+    "@open-talons/plugin-security": "workspace:*",
+    "tsx": "^4.19.2"
+  }
+}

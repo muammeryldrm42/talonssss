@@ -1,0 +1,49 @@
+{
+  "name": "@open-talons/cli",
+  "version": "2.0.0",
+  "description": "Interactive CLI for Open Talons",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "talons": "./dist/index.js",
+    "open-talons": "./dist/index.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@open-talons/core": "workspace:*",
+    "@open-talons/plugin-bagsfm": "workspace:*",
+    "@open-talons/plugin-pumpfun": "workspace:*",
+    "@open-talons/plugin-solana": "workspace:*",
+    "@open-talons/plugin-solana-dev": "workspace:*",
+    "@open-talons/plugin-base-meme": "workspace:*",
+    "@open-talons/plugin-crypto": "workspace:*",
+    "@open-talons/plugin-trading": "workspace:*",
+    "@open-talons/plugin-strategies": "workspace:*",
+    "@open-talons/plugin-security": "workspace:*",
+    "@open-talons/plugin-research": "workspace:*",
+    "@open-talons/plugin-defi": "workspace:*",
+    "@open-talons/plugin-twitter": "workspace:*",
+    "@open-talons/plugin-onchain": "workspace:*",
+    "@open-talons/plugin-whale": "workspace:*",
+    "@open-talons/plugin-github": "workspace:*",
+    "@open-talons/plugin-telegram": "workspace:*",
+    "@open-talons/plugin-macro": "workspace:*",
+    "@open-talons/plugin-derivatives": "workspace:*",
+    "@open-talons/plugin-airdrop": "workspace:*",
+    "@open-talons/plugin-memescan": "workspace:*",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  },
+  "engines": { "node": ">=18" }
+}
